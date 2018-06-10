@@ -40,12 +40,18 @@ a:active {
   background-color: #ffffff;
 }
 
+.headcon {
+  width: 962px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .name {
   height: 75px;
   width: 220px;
   background-color: #0f2694;
   margin-top: 25px;
-  margin-left: 18.6%;
   text-align: center;
   vertical-align: middle;
   line-height: 75px;
@@ -57,9 +63,9 @@ a:active {
 }
 
 .nav {
-  width: 300px;
+  width: 250px;
   height: 25px;
-  margin-left: 64.4%;
+  float: right;
   text-align: center;
   vertical-align: middle;
   padding-top: 45px;
@@ -87,7 +93,7 @@ a:active {
 }
 
 #contact {
-  width: 78px;
+  width: 65px;
   text-align: left;
 }
 
