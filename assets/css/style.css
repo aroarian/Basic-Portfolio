@@ -114,8 +114,10 @@ a:active {
 }
 
 .container_two {
-  width: 960px;
-  height: 600px;
+  width: 80%;
+  height: auto;
+  max-width: 960px;
+  min-height: 600px;
   background-color: #ffffff;
   margin-top: 30px;
   margin-left: auto;
@@ -124,8 +126,10 @@ a:active {
 }
 
 .container_three {
-  width: 960px;
-  height: 650px;
+  width: 80%;
+  height: auto;
+  max-width: 960px;
+  min-height: 650px;
   background-color: #ffffff;
   margin-top: 30px;
   margin-bottom: 75px;
@@ -163,6 +167,21 @@ a:active {
   padding-bottom: 10px;
 }
 
+.content_two img {
+  max-width: 180px;
+  max-height: 250px;
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.content_two {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
 p {
   font-family: Arial, Helvetica, sans-serif;
   color: #777777;
@@ -192,12 +211,6 @@ h2 {
 
 .conName {
   padding-top: 0px;
-}
-
-.content_two {
-  width: 900px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 input[type="text"] {
@@ -235,6 +248,18 @@ textarea {
   box-sizing: border-box;
 }
 
+.row1 {
+  width:100%;
+  height: 165px;
+  
+}
+
+.row2 {
+  width:100%;
+  height: 165px;
+  
+  
+}
 .pic1 img {
   position: relative;
   margin-right: 60px;
@@ -244,13 +269,15 @@ textarea {
 
 .pic2 img {
   position: relative;
-  margin-right: 400px;
+  float:left;
   padding: 0px;
   margin-bottom: 30px;
 }
 
 .pic3 img {
+  
   position: relative;
+  float:left;
   margin-right: 60px;
   margin-bottom: 30px;
   padding: 0px;
@@ -258,13 +285,14 @@ textarea {
 
 .pic4 img {
   position: relative;
-  margin-right: 400px;
+  float:left;
   padding: 0px;
   margin-bottom: 30px;
 }
 
 .pic5 img {
   position: relative;
+  float: left;
   margin-right: 60px;
   padding: 0px;
   margin-bottom: 30px;
@@ -297,7 +325,7 @@ textarea {
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  margin-top: 245px;
+  margin-top: 80px;
   position: absolute;
   width: 150px;
   padding: 15px;
@@ -308,7 +336,7 @@ textarea {
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  margin-top: 245px;
+  margin-top: 80px;
   margin-left: 240px;
   position: absolute;
   width: 150px;
@@ -320,7 +348,7 @@ textarea {
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  margin-top: 410px;
+  margin-top: 80px;
   position: absolute;
   width: 150px;
   padding: 15px;
@@ -329,14 +357,24 @@ textarea {
 
 @media screen and (max-width: 981px) {
   .headcon {
-    width: 90%;
+    width: 85%;
   }
 
   .container {
-    width: 90%;
+    width: 85%;
   }
 
+  .container_two {
+    width: 85%;
+  }
+
+  .container_three {
+    width: 85%;
+  }
   .content {
+    width: 95%;
+  }
+  .content_two {
     width: 95%;
   }
 
@@ -354,6 +392,7 @@ textarea {
     margin-bottom: 10px;
     height: 40%;
     width: 100%;
+    
     max-width: 100%;
     font-size: 16px;
     vertical-align: center;
@@ -371,10 +410,86 @@ textarea {
     min-width: 332px;
   }
 
+  .container_two {
+    min-width: 332px;
+  }
+
+  .container_three {
+    min-width: 332px;
+  }
+
   .content img {
     float: none;
-    margin-left:20%;
-    margin-right:20%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .content_two img {
+    max-width: 275px;
+  }
+
+  div .content_two {
+    max-width: 275px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pic1 img, .pic2 img, .pic3 img, .pic4 img, .pic5 img{
+    float: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .pic1 img, .pic2 img, .pic3 img, .pic4 img{
+    margin-bottom: 10px;
+  }
+
+  .pic5 img {
+    margin-bottom: 40px;
+  }
+
+  .row1 {
+    height: auto;
+  }
+ 
+  .row2 {
+    height: auto;
+  }
+
+  .row3 {
+    height: auto;
+  }
+
+  .banner1{
+    width: 245px;
+    margin-top: -70px;
+    
+  }
+
+  .banner2{
+    width: 245px;
+    margin-left:0;
+    margin-top: -70px;
+    
+  }
+
+  .banner3{
+    width: 245px;
+    margin-left:0;
+    margin-top: -70px;
+    
+  }
+
+  .banner4{
+    width: 245px;
+    margin-left:0;
+    margin-top: -70px;
+    
+  }
+
+  .banner5{
+    width: 245px;
+    margin-left:0;
+    margin-top: -100px;
     
   }
 }
