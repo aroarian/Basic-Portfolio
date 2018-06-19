@@ -41,15 +41,17 @@ a:active {
 }
 
 .headcon {
-  width: 962px;
+  width: 80%;
   height: 100px;
+  max-width: 960px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .name {
   height: 75px;
-  width: 220px;
+  width: 30%;
+  max-width: 220px;
   background-color: #0f2694;
   margin-top: 25px;
   text-align: center;
@@ -98,14 +100,17 @@ a:active {
 }
 
 .container {
-  width: 960px;
-  height: 400px;
+  width: 80%;
+  height: auto;
+  max-width: 960px;
+  min-height: 400px;
   background-color: #ffffff;
   margin-top: 30px;
   margin-bottom: 75px;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid #0f2694;
+  padding-bottom: 30px;
 }
 
 .container_two {
@@ -131,7 +136,7 @@ a:active {
 
 .head {
   color: #0f2694;
-  width: 900px;
+  width: 95%;
   height: 50px;
   font-size: 24px;
   font-weight: bold;
@@ -144,15 +149,15 @@ a:active {
 }
 
 .content {
-  width: 900px;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
 }
 
 .content img {
-  max-width: 20%;
-  max-height: 20%;
+  max-width: 250px;
+  max-height: 250px;
   float: left;
   padding-right: 10px;
   padding-bottom: 10px;
@@ -320,4 +325,56 @@ textarea {
   width: 150px;
   padding: 15px;
   background-color: #0f2694;
+}
+
+@media screen and (max-width: 981px) {
+  .headcon {
+    width: 90%;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .content {
+    width: 95%;
+  }
+
+  .head {
+    width: 95%;
+  }
+  .name {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .name {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    height: 40%;
+    width: 100%;
+    max-width: 100%;
+    font-size: 16px;
+    vertical-align: center;
+    line-height: 250%;
+  }
+
+  .nav {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+  }
+
+  .container {
+    min-width: 332px;
+  }
+
+  .content img {
+    float: none;
+    margin-left:20%;
+    margin-right:20%;
+    
+  }
 }
